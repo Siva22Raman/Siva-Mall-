@@ -1,0 +1,161 @@
+/* Default styles for the second-navbar */
+.second-navbar {
+  background-color: #333;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0");
+  color: #fff;
+  padding: 10px 0;
+}
+
+.second-navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.second-navbar-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.second-navbar-item {
+  margin-right: 20px;
+}
+
+.second-navbar-item:last-child {
+  margin-right: 0;
+}
+
+.second-navbar-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.second-navbar-item a:hover {
+  text-decoration: wavy;
+}
+
+/* Style for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 4px 10px;
+  background-color: transparent;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  margin-left: 5px;
+}
+
+/* Style for user info and login/sign-up links */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info a {
+  margin-left: 10px;
+}
+/* Styles for the navigation buttons */
+/* Styles for the navigation buttons */
+.nav-button {
+  background-color: #00aaff;background-image: url("https://media.istockphoto.com/id/1248542684/vector/abstract-blurred-colorful-background.jpg?s=612x612&w=0&k=20&c=6aJX8oyUBsSBZFQUCJDP7KZ1y4vrf-wEH_SJsuq7B5I=");
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+}
+
+/* Add hover effect */
+.nav-button:hover {
+  background-color:white;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=600");
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgb(16, 247, 239);
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform-origin: top;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-dropdown .dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-dropdown .dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-dropdown .dropdown-menu li a:hover {
+  background-color: #14e9e9;
+}
+
+
+
+/* Add custom styles for icons as needed */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .second-navbar-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .second-navbar-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .second-navbar-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}

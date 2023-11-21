@@ -1,0 +1,84 @@
+/* Add your styles to a CSS file or style block in your React component */
+
+.custom-billing-form-container {
+    max-width: 600px;
+    margin-left: 100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-billing-form-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .custom-billing-form-body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .custom-horizontal-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .custom-billing-input-box {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .custom-vertical-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .gender-radio-buttons {
+  display: flex;
+  margin-top: 10px;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.gender-radio-buttons label {
+  margin-right: 80px; /* Add margin between radio buttons and labels */
+}
+
+  
+  .custom-billing-input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .custom-billing-input-box input,
+  .custom-billing-input-box select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .custom-billing-submit-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .custom-billing-submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  label.checkbox-label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Add more styles as needed */
+  

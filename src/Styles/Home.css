@@ -1,0 +1,7 @@
+.home-background {
+    background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-8.jpg'); /* Replace 'path_to_your_background_image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: This makes the background fixed while scrolling */
+    /* Add any other CSS properties you want to style your background */
+  }

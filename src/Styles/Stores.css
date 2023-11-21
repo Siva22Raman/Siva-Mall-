@@ -1,0 +1,59 @@
+/* Stores.css */
+
+.stores-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .store-card {
+    background: transparent url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg') center/cover no-repeat;
+    width: 100%; /* Adjust the width and margin as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #0ef5f5;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .store-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .store-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .store-name {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .store-description {
+    color: #f8fdfd;
+  }
+  
+  .shop-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .shop-button:hover {
+    background-color: #0056b3;
+  }
+  

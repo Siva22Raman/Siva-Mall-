@@ -1,0 +1,68 @@
+/* ShopCard.css */
+.shop-card {
+  width: 100%; /* Use percentage for width to make it responsive */
+  max-width: 300px; /* Set a maximum width to prevent it from becoming too wide on large screens */
+  flex-direction: row;
+  border: 1px solid #00d0f5;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg') center/cover no-repeat; /* Add your background image URL here */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.shop-card-container {
+  display: flex; /* Use flexbox to make cards horizontal */
+  justify-content: space-between; /* Distribute space evenly between cards */
+}
+
+.shop-card-image {
+  max-width: 100%;
+  height: auto; /* Let the height adjust proportionally based on the image's aspect ratio */
+  border-radius: 5px;
+}
+
+.shop-card-content {
+  padding: 10px;
+}
+
+.shop-card-title {
+  font-size: 1.2rem;
+  color: rgb(64, 240, 70);
+  margin: 0;
+}
+
+.shop-card-description {
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.shop-card-button {
+  background-color: #0400ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .shop-card {
+    max-width: 100%; /* Make the card take up the full width of the screen on smaller devices */
+    margin: 10px 0; /* Adjust margin to provide spacing between cards */
+  }
+}

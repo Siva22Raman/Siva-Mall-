@@ -1,0 +1,19 @@
+.slideshow-container {
+    max-width: 100%;
+    overflow: hidden;
+    height: 50%;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .active {
+    display: block;
+  }
+  

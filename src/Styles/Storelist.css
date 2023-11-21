@@ -1,0 +1,9 @@
+.store-list-container {
+  background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-8.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
