@@ -34,40 +34,14 @@ const BillingAddressForm = ({ onFormSubmit }) => {
     e.preventDefault();
     if (onFormSubmit) {
       onFormSubmit(); // Call the provided callback to notify the parent component
-    }
-    try {
-      const response = await fetch('/api/billing', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(billingInfo),
-      });
-
-      if (response.ok) {
         console.log('Billing information submitted successfully');
         Swal.fire({
           icon: 'success',
           title: 'Success!',
           text: 'Billing information received successfully!',
         });
-      } else {
-        console.error('Failed to submit billing information');
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Failed to submit billing information!',
-        });
       }
-    } catch (error) {
-      console.error('Error submitting billing information:', error);
-      Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Error submitting billing information!',
-      });
-    }
-    // Handle form submission, e.g., send data to the server
+      
   };
 
   const getStatesForCountry = (country) => {
