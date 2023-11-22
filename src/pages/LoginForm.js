@@ -2,38 +2,32 @@ import React, { useState } from 'react';
 import "../Styles/LoginForm.css";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
 import Snavbar from '../components/Snavbar';
+import Swal from 'sweetalert2';
 function LoginForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
   const navigate = useNavigate();
-  const handleSubmit = async(e) => {
+  const correctPassword = '1234567'; // Replace this with your actual authentication logic
+
+  const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!username || !password) {
-      alert('Please fill in all fields'); // Show an alert instead of using the error state
+      alert('Please fill in all fields');
       return;
     }
 
-    try {
-      const response = await fetch('/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
+    if (password === correctPassword) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Billing information received successfully!',
       });
-
-      if (response.ok) {
-        const data = await response.json();
-        localStorage.setItem('token', data.token);
-        navigate('/Pay');
-      } else {
-        alert('Invalid email or password'); // Show an alert for errors
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred during login.'); // Show an alert for errors
+      navigate('/Pay');
+    } else {
+      alert('Invalid username or password');
     }
   };
   
