@@ -23,7 +23,7 @@ function LoginForm() {
       Swal.fire({
         icon: 'success',
         title: 'Success!',
-        text: 'Billing information received successfully!',
+        text: 'login successfull',
       });
       navigate('/Pay');
     } else {
